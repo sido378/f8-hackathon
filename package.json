@@ -3,5 +3,39 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "silvio",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@fb-msgr/incoming-message-helper": "^0.0.1",
+    "@fb-msgr/messenger-api": "^0.1.3",
+    "@fb-msgr/webhook-express-helper": "^0.0.3",
+    "@firebase/app-types": "^0.2.0",
+    "babel": "^6.23.0",
+    "babel-core": "6",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "chalk": "^2.4.1",
+    "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "firebase-admin": "^5.12.0",
+    "firebase-queue": "^1.6.1",
+    "lodash": "^4.17.10",
+    "node-loader": "^0.6.0",
+    "node-sass": "^4.9.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "build": "webpack -p",
+    "build dev": "webpack -p --watch"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.2"
+  }
 }
